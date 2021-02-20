@@ -67,6 +67,9 @@ class MainActivity : AppCompatActivity() {
                     //limpa tela
                     for (i in 0 until LINHA) {
                         for (j in 0 until COLUNA) {
+                            if(board[i][j] == 1){
+                                continue
+                            }
                             boardView[i][j]!!.setImageResource(R.drawable.black)
                         }
                     }
@@ -74,10 +77,19 @@ class MainActivity : AppCompatActivity() {
                     pt.moveDown()
                     //print peça
                     try {
-                        boardView[pt.x][pt.y]!!.setImageResource(R.drawable.white)
+                        if(board[pt.x][pt.y] == 1){
+                            boardView[pt.x-1][pt.y]!!.setImageResource(R.drawable.white)
+                            board[pt.x-1][pt.y] = 1 // o board é utilizado para mapear onde tem peças
+                            pt.x = 0
+                        }else{
+                            boardView[pt.x][pt.y]!!.setImageResource(R.drawable.white)
+                        }
+
                     }catch (e:ArrayIndexOutOfBoundsException ) {
                         //se a peça passou das bordas eu vou parar o jogo
-                        running = false
+                        //running = false
+                        board[pt.x-1][pt.y] = 1
+                        pt.x = 0
                     }
 
                 }
