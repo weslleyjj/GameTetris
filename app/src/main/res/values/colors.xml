@@ -2,5 +2,14 @@
 <resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="confirma">#4CAF50</color>
+    <color name="cancela">#E63B3B</color>
+    <color name="aviso">#FFEB3B</color>
+    <color name="azul">#03A9F4</color>
+    <color name="preto">#000000</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="cinza">#989596</color>
+    <color name="padrao">#E15377F6</color>
+    <color name="amarelo">#F8E32F</color>
+    <color name="testes">#FFEB3B</color>
 </resources>

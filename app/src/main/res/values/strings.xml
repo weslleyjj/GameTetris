@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">GameTetris</string>
+    <string name="selecione_a_dificuldade_de_jogo">Selecione a dificuldade de jogo:</string>
+    <string name="Normal">Normal</string>
+    <string name="f_cil">Fácil</string>
+    <string name="facil">facil</string>
+    <string name="Fácil">Fácil</string>
+    <string name="Difícil">Difícil</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="continuar">Continuar</string>
+    <string name="novo_jogo">Novo Jogo</string>
+    <string name="configuracoes">Configurações</string>
+    <string name="sair">Sair</string>
 </resources>
