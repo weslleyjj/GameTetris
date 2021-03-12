@@ -1,7 +1,5 @@
 package br.ufrn.eaj.tads.gametetris.pecas
 
-import br.ufrn.eaj.tads.gametetris.Ponto
-
 open class PecaBase(pontoA: Ponto, pontoB: Ponto, pontoC: Ponto, pontoD: Ponto) {
     private var peca = arrayOf(
         Ponto(pontoA.x, pontoA.y),

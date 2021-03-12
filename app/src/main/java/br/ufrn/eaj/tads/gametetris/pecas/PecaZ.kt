@@ -1,7 +1,5 @@
 package br.ufrn.eaj.tads.gametetris.pecas;
 
-import br.ufrn.eaj.tads.gametetris.Ponto
-
 //Formato
 /**
  *      Z

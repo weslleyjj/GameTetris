@@ -1,10 +1,31 @@
 package br.ufrn.eaj.tads.gametetris
 
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.view.LayoutInflater
 import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
+import br.ufrn.eaj.tads.gametetris.databinding.ActivityConfigBinding
+import br.ufrn.eaj.tads.gametetris.databinding.ActivityJogoBinding
 
-class JogoActivity {
+class JogoActivity:AppCompatActivity() {
+
+
+    lateinit var binding:ActivityJogoBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        setContentView(R.layout.activity_jogo)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_jogo)
+
+        binding.pausa.setOnClickListener {
+            finish()
+        }
+
+    }
+
     /*
     val LINHA = 36
     val COLUNA = 26

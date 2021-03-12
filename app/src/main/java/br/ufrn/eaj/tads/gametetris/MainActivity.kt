@@ -22,6 +22,16 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.novoJogo.setOnClickListener {
+            val intent = Intent(this, JogoActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.continuar.setOnClickListener {
+            val intent = Intent(this, PontuacaoActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.sair.setOnClickListener {
             finish()
         }
