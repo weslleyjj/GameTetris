@@ -63,7 +63,8 @@
                 />
             <TableRow
                 android:background="@color/testes"
-                android:layout_marginTop="25dp">
+                android:layout_marginTop="25dp"
+                >
                 <GridLayout
                     android:layout_width="40dp"
                     android:layout_height="50dp"
