@@ -11,4 +11,14 @@
     <string name="novo_jogo">Novo Jogo</string>
     <string name="configuracoes">Configurações</string>
     <string name="sair">Sair</string>
+    <string name="pontuacao">Sua pontuação</string>
+    <string name="pontosFinais">0</string>
+    <string name="recorde">Recorde</string>
+    <string name="novo_jogo_tela_pontos">Novo Jogo</string>
+    <string name="pontos">Pontos:</string>
+    <string name="pontuacaoAtual">0</string>
+    <string name="direita"><![CDATA[>>>]]></string>
+    <string name="esquerda"><![CDATA[<<<]]></string>
+    <string name="moverBaixo">V</string>
+    <string name="proxima">Próximas</string>
 </resources>

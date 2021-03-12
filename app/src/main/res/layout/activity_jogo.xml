@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/padrao"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pontos"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingStart="30dp"
+            android:paddingTop="10dp"
+            android:gravity="left"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pontuacaoAtual"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:gravity="left"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <GridLayout
+            android:layout_width="280dp"
+            android:layout_height="450dp"
+            android:layout_marginStart="30dp"
+            android:background="@color/cinza"
+            />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp"
+            >
+            <TextView
+                android:text="@string/proxima"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                />
+            <TableRow
+                android:background="@color/testes"
+                android:layout_marginTop="25dp">
+                <GridLayout
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/proximaPeca1"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:background="@color/testes"
+                android:layout_marginTop="25dp">
+                <GridLayout
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/proximaPeca2"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:background="@color/testes"
+                android:layout_marginTop="25dp">
+                <GridLayout
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/proximaPeca3"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp">
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/pausa"
+                    android:text="| |"
+                    android:textStyle="bold"
+                    android:textSize="40sp"
+                    />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="55dp"
+            android:gravity="center_horizontal"
+            tools:ignore="RtlHardcoded"
+            android:id="@+id/moverEsquerda"
+            android:textSize="40sp"
+            android:text="◁"
+            android:textStyle="bold"
+            android:textAlignment="gravity"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="100dp"
+            tools:ignore="RtlHardcoded"
+            android:id="@+id/moverDireita"
+            android:text="▷"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        >
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="55dp"
+            android:gravity="center_horizontal"
+            tools:ignore="RtlHardcoded"
+            android:id="@+id/girar"
+            android:textSize="40sp"
+            android:text="⟳"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="100dp"
+            tools:ignore="RtlHardcoded"
+            android:id="@+id/moverBaixo"
+            android:text="▽"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+</layout>

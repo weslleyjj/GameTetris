@@ -13,5 +13,14 @@ class ConfigActivity: AppCompatActivity() {
 
         setContentView(R.layout.activity_config)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_config)
+
+        binding.confirmaDificuldade.setOnClickListener {
+
+        }
+
+        binding.cancelaConfiguracoes.setOnClickListener {
+            finish()
+        }
+
     }
 }

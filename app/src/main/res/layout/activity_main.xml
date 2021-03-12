@@ -43,7 +43,7 @@
         android:padding="20dp"
         android:layout_margin="10dp"
         android:shadowRadius="100"
-        android:shadowColor="@color/preto"
+        android:shadowColor="@color/aviso"
         android:id="@+id/novo_jogo"
         />
 
@@ -73,7 +73,7 @@
         android:padding="20dp"
         android:layout_margin="10dp"
         android:shadowRadius="100"
-        android:shadowColor="@color/cancela"
+        android:shadowColor="@color/aviso"
         android:id="@+id/sair"
         />
 
